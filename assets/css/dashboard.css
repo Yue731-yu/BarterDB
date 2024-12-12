@@ -1,0 +1,140 @@
+/* General container for dashboard */
+.dashboard-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f0f2f5;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Dashboard title */
+.dashboard-container h2 {
+    color: #324b63; /* Darker blue-gray */
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Quick navigation section */
+.quick-links {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.quick-links a {
+    padding: 12px 18px;
+    background-color: #324b63; /* Dark blue-gray */
+    color: #ffcb47; /* Deep yellow */
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.quick-links a:hover {
+    background-color: #2a3f54;
+}
+
+/* Bulletin Board section styling */
+.bulletin-board {
+    margin-bottom: 30px;
+}
+
+.bulletin-board h3 {
+    font-size: 1.5rem;
+    color: #324b63;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.bulletin-item {
+    padding: 15px;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.bulletin-item h4 {
+    font-size: 1.2rem;
+    color: #324b63;
+    margin-bottom: 8px;
+}
+
+.bulletin-item p {
+    margin-bottom: 8px;
+    color: #555;
+}
+
+.bulletin-item .trade-status {
+    font-weight: bold;
+    color: #5cb85c;
+}
+
+/* Transaction history table styling */
+.transaction-history {
+    margin-top: 30px;
+}
+
+.transaction-history table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    background-color: #ffffff;
+}
+
+.transaction-history th, .transaction-history td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+.transaction-history th {
+    background-color: #324b63;
+    color: #ffcb47;
+    font-weight: bold;
+}
+
+.transaction-history tr:nth-child(even) {
+    background-color: #f7f7f7;
+}
+
+.transaction-history tr:hover {
+    background-color: #e9ecef;
+}
+
+/* Action buttons styling */
+.action-buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.action-buttons .button {
+    padding: 10px 15px;
+    background-color: #324b63;
+    color: #ffcb47;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    margin-left: 10px;
+}
+
+.action-buttons .button:hover {
+    background-color: #2a3f54;
+}
+
+.action-buttons .button-danger {
+    background-color: #d9534f;
+    color: #fff;
+}
+
+.action-buttons .button-danger:hover {
+    background-color: #c9302c;
+}

@@ -1,0 +1,281 @@
+:root {
+    --main-color-1: #2b3a4d; /* Dark blue-gray */
+    --main-color-2: #f4b400; /* Deep yellow */
+    --text-light: #ffffff; /* White for text on dark backgrounds */
+    --background-light-green: #e6f5e6; /* Light green for announcement background */
+    --background-light-pink: #ffe6f0; /* Light pink for trade updates background */
+}
+
+/* Reset styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: var(--main-color-1);
+    line-height: 1.6;
+}
+
+/* Container styling */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Welcome Section Styling */
+.welcome-container {
+    text-align: center;
+    padding: 30px;
+    background-color: #c1d5de; /* Light gray background */
+    margin: 20px auto;
+    max-width: 1200px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.welcome-container h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #0f0f0f;
+}
+
+.welcome-container p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #0f0f0f;
+}
+
+.auth-buttons {
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.auth-buttons .button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    margin: 5px;
+    color: var(--main-color-2);
+    background-color: var(--main-color-1);
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.auth-buttons .button:hover {
+    opacity: 0.9;
+}
+
+/* Info container for announcements and trade updates */
+.info-container {
+    display: flex;
+    max-width: 1200px;
+    margin: 20px auto;
+    gap: 20px;
+}
+
+/* Announcement Board Styling */
+.bulletin-board {
+    flex: 1;
+    padding: 20px;
+    background-color: var(--background-light-green);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.bulletin-board h3 {
+    font-size: 1.8rem;
+    color: var(--main-color-1);
+    margin-bottom: 15px;
+}
+
+.bulletin-scroll {
+    max-height: 300px;
+    overflow-y: auto;
+    padding-right: 10px;
+}
+
+.bulletin-scroll ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.bulletin-scroll li {
+    background-color: #f0f9f0;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #d0e6d0;
+}
+
+.bulletin-scroll li h4 {
+    color: #0f0f0f;
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+.bulletin-scroll li p {
+    color: #0f0f0f;
+    font-size: 0.9rem;
+}
+
+/* Trade Updates Styling */
+.trade-updates {
+    flex: 1;
+    padding: 20px;
+    background-color: var(--background-light-pink);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.trade-updates h3 {
+    font-size: 1.8rem;
+    color: var(--main-color-1);
+    margin-bottom: 15px;
+}
+
+.trade-scroll {
+    max-height: 300px;
+    overflow: hidden;
+    position: relative;
+}
+
+.trade-scroll ul {
+    padding: 0;
+    list-style-type: none;
+    animation: scroll-up 20s linear infinite;
+}
+
+@keyframes scroll-up {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-50%);
+    }
+}
+
+.trade-scroll li {
+    background-color: #ffe6ea;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #f5d0d8;
+    font-size: 0.9rem;
+}
+
+.trade-scroll li p {
+    color: #0f0f0f;
+}
+
+/* Highlighting User ID and Item Name in Trade Updates */
+.trade-scroll li p strong,
+.trade-scroll li p .highlight {
+    color: #c980f3;
+    font-weight: bold;
+}
+
+
+/* Collapsible button styling */
+.collapsible {
+    margin-left: 80px;
+    background-color: var(--main-color-1);
+    color: var(--text-light);
+    cursor: pointer;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 90%;
+    max-width: 1200px;
+    text-align: center;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    transition: background-color 0.3s;
+}
+
+.collapsible:hover {
+    background-color: #8aaacb;
+}
+
+.content {
+    max-width: 1200px;
+    margin: 0 auto; 
+    padding: 10px 30px; 
+    display: none;
+    overflow: hidden;
+    background-color: #f4f4f4;
+    margin-top: 10px;
+    border-radius: 10px;
+    font-size: 1rem;
+    color: #0f0f0f;
+}
+
+
+.content ul, .content ol {
+    margin: 15px 30px;
+}
+
+.content p, .content li {
+    margin-bottom: 10px;
+}
+
+/* Footer styling */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--main-color-1);
+    color: var(--text-light);
+    text-align: center;
+    padding: 1rem 0;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.footer-container p {
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .info-container {
+        flex-direction: column;
+    }
+
+    .welcome-container h2 {
+        font-size: 2rem;
+    }
+
+    .welcome-container p, .bulletin-board li h4, .trade-updates li p {
+        font-size: 1rem;
+    }
+
+    .collapsible {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .welcome-container h2 {
+        font-size: 1.8rem;
+    }
+
+    .collapsible {
+        font-size: 0.9rem;
+    }
+}

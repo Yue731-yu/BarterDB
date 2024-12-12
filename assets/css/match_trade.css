@@ -1,0 +1,166 @@
+/* General container for match trade page */
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f0f2f5; /* Light blue-gray */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Header styling */
+h2 {
+    text-align: center;
+    color: #324b63; /* Darker blue-gray */
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: #324b63;
+    font-size: 1.5rem;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Message styling */
+.message {
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.message.success {
+    background-color: #d4edda; /* Light green background */
+    color: #155724; /* Dark green text */
+    border: 1px solid #c3e6cb;
+}
+
+.message.error {
+    background-color: #f8d7da; /* Light red background */
+    color: #721c24; /* Dark red text */
+    border: 1px solid #f5c6cb;
+}
+
+/* Form styling */
+.container form {
+    margin-bottom: 20px;
+}
+
+.container label {
+    font-weight: bold;
+    color: #324b63; /* Darker blue-gray */
+}
+
+.container select,
+.container button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.container button {
+    background-color: #324b63; /* Dark blue-gray */
+    color: #ffcb47; /* Deep yellow */
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.container button:hover {
+    background-color: #2a3f54; /* Slightly darker blue-gray */
+}
+
+/* List styling for matches */
+.container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.container ul li {
+    padding: 15px;
+    margin-bottom: 10px;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.container ul li form {
+    margin: 0;
+}
+
+.container ul li form button {
+    width: auto;
+    padding: 8px 15px;
+    display: inline-block;
+}
+
+/* Table styling for transaction history */
+.container .table-container {
+    margin-top: 30px;
+}
+
+.container .table-container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    background-color: #ffffff;
+}
+
+.container .table-container th,
+.container .table-container td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+.container .table-container th {
+    background-color: #324b63; /* Dark blue-gray */
+    color: #ffcb47; /* Deep yellow */
+    font-weight: bold;
+}
+
+.container .table-container tr:nth-child(even) {
+    background-color: #f7f7f7; /* Light gray for even rows */
+}
+
+.container .table-container tr:hover {
+    background-color: #e9ecef; /* Slightly darker gray on hover */
+}
+
+/* Link styling */
+.container a {
+    color: #324b63; /* Darker blue-gray */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.container a:hover {
+    color: #2a3f54; /* Slightly darker on hover */
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .container button {
+        font-size: 0.9rem;
+    }
+}

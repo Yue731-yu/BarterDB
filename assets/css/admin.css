@@ -1,0 +1,146 @@
+/* admin.css */
+
+/* Main container for admin dashboard */
+.admin-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.admin-container h2 {
+    color: #007bff;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* User and transaction table styling */
+.admin-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.admin-table th, .admin-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.admin-table th {
+    background-color: #007bff;
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer; /* Make headers clickable for sorting */
+}
+
+.admin-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.admin-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Status labels for user accounts */
+.status-active {
+    color: #5cb85c;
+    font-weight: bold;
+}
+
+.status-suspended {
+    color: #f0ad4e;
+    font-weight: bold;
+}
+
+.status-deleted {
+    color: #d9534f;
+    font-weight: bold;
+}
+
+/* Admin action buttons */
+.admin-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.admin-actions .button {
+    padding: 8px 15px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s;
+}
+
+.admin-actions .button:hover {
+    background-color: #0056b3;
+}
+
+.admin-actions .button-danger {
+    background-color: #d9534f;
+}
+
+.admin-actions .button-danger:hover {
+    background-color: #c9302c;
+}
+
+.admin-actions .button-approve {
+    background-color: #5cb85c;
+}
+
+.admin-actions .button-approve:hover {
+    background-color: #4cae4c;
+}
+
+/* Summary section styling */
+.summary-section {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.summary-section h3 {
+    color: #333;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.summary-section p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Pagination styling */
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pagination .page-link {
+    padding: 8px 12px;
+    margin: 0 5px;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 3px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.pagination .page-link:hover {
+    background-color: #0056b3;
+}
+
+.pagination .active {
+    background-color: #333;
+    pointer-events: none;
+}

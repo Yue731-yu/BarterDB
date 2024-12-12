@@ -1,0 +1,341 @@
+:root {
+    --main-color-1: #2b3a4d;
+    --main-color-2: #f4b400;
+    --text-light: #ffffff;
+}
+
+/* Reset styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: var(--main-color-1);
+    line-height: 1.6;
+}
+
+/* Container styling */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo styling */
+.logo {
+    height: 40px;
+    margin-right: 400px;
+    margin-left: 5px;
+    vertical-align: middle;
+    background-color: #f1f1ec; 
+    padding: 5px 10px; 
+    border-radius: 8px; 
+    transition: background-color 0.3s ease; 
+}
+
+/* Hover effect */
+.logo:hover {
+    background-color: #0b1e3a; 
+}
+
+
+.logo-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Header styling */
+header {
+    background-color: var(--main-color-1);
+    color: var(--text-light);
+    padding: 0.6rem 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.header-container {
+    width: 90%;
+    max-width: 2800px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h1 {
+    font-size: 1.2rem;
+    margin: 0;
+    color: var(--text-light);
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 10px;
+}
+
+nav ul li a {
+    color: var(--main-color-2);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9rem;
+    background-color: #0b1e3a; 
+    padding: 5px 8px; 
+    border-radius: 5px; 
+}
+
+nav ul li a:hover {
+    background-color: #595f64; 
+}
+
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main content styling */
+main {
+    flex: 1 0 auto;
+    width: 90%;
+    max-width: 1400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding-bottom: 60px; /* Space for footer height to avoid overlap */
+    margin-bottom: 60px;
+}
+
+/* Footer fixed at the bottom */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--main-color-1);
+    color: var(--text-light);
+    text-align: center;
+    padding: 0.6rem 0;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.footer-container p {
+    font-size: 0.75rem;
+    margin: 0;
+}
+
+/* Auth form container styling */
+.auth-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.auth-container h2 {
+    color: var(--main-color-1);
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.auth-container p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.auth-container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.auth-container form label {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: var(--main-color-1);
+}
+
+.auth-container form input[type="text"],
+.auth-container form input[type="email"],
+.auth-container form input[type="password"],
+.auth-container form input[type="number"],
+.auth-container form textarea,
+.auth-container form select {
+    width: 100%;
+    max-width: 350px;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.auth-container form button {
+    width: 100%;
+    max-width: 350px;
+    padding: 12px;
+    background-color: var(--main-color-2);
+    color: var(--text-light);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.auth-container form button:hover {
+    background-color: #d39400;
+}
+
+/* Error message styling */
+.auth-container .error-message {
+    color: red;
+    margin-bottom: 15px;
+}
+
+/* Footer text for login/register links */
+.auth-container .auth-footer {
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
+
+.auth-container a {
+    color: var(--main-color-2);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.auth-container a:hover {
+    text-decoration: underline;
+}
+
+/* Form styling */
+form label {
+    font-weight: bold;
+    color: var(--main-color-1);
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form input[type="number"],
+form textarea,
+form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: var(--main-color-2);
+    color: var(--text-light);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+form button:hover {
+    background-color: #d39400;
+}
+
+/* Table styling */
+table th {
+    background-color: var(--main-color-1);
+    color: var(--text-light);
+    font-weight: bold;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Button styling */
+.button {
+    padding: 5px 10px;
+    background-color: var(--main-color-2);
+    color: var(--text-light);
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #d39400;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header-container, .container, main, footer {
+        padding: 10px;
+        width: 95%;
+    }
+    
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    nav ul li {
+        margin-left: 5px;
+    }
+    
+    nav ul li a {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .header-container {
+        flex-direction: column;
+    }
+
+    header h1 {
+        font-size: 1.2rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

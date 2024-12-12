@@ -1,0 +1,172 @@
+/* item.css */
+
+/* Main container for item posting and management */
+.item-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.item-container h2 {
+    color: #007bff;
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Form styling for posting a new item */
+.item-form {
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.item-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.item-form input[type="text"],
+.item-form input[type="number"],
+.item-form textarea,
+.item-form select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.item-form input[type="text"]::placeholder,
+.item-form input[type="number"]::placeholder,
+.item-form textarea::placeholder {
+    color: #aaa;
+    font-size: 0.9rem;
+}
+
+.item-form textarea {
+    resize: vertical;
+}
+
+.item-form button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.item-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Message styling for success and error */
+.message {
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+}
+
+.message.success {
+    background-color: #dff0d8;
+    color: #3c763d;
+    border-color: #d6e9c6;
+}
+
+.message.error {
+    background-color: #f2dede;
+    color: #a94442;
+    border-color: #ebccd1;
+}
+
+/* Item list styling */
+.item-list {
+    margin-top: 30px;
+}
+
+.item-card {
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.item-card h3 {
+    color: #007bff;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.item-card p {
+    margin-bottom: 8px;
+    color: #555;
+}
+
+.item-card .item-status {
+    font-weight: bold;
+    color: #5cb85c;
+}
+
+/* Action buttons within item cards */
+.item-actions {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.item-actions .button {
+    padding: 8px 15px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s;
+}
+
+.item-actions .button:hover {
+    background-color: #0056b3;
+}
+
+.item-actions .button-danger {
+    background-color: #d9534f;
+}
+
+.item-actions .button-danger:hover {
+    background-color: #c9302c;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .item-container {
+        padding: 15px;
+    }
+
+    .item-form button {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+
+    .item-card h3 {
+        font-size: 1rem;
+    }
+
+    .item-card p {
+        font-size: 0.9rem;
+    }
+}
